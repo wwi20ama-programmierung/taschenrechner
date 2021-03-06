@@ -67,7 +67,6 @@ public class Calculator {
             case "/":
             case ":":
             case "%":
-            case "geteilt":
             case "geteilt durch":
                 this.operators.add(new Division());
                 break;
@@ -80,7 +79,7 @@ public class Calculator {
     /**
      * Nutzt die vorher hinzugefügten Zahlen und Operatoren, um das Ergebnis zu berechnen.
      *
-     * @return double Ergebnis
+     * @return Ergebnis
      */
     public double calculate() {
         // Da wir die Anzahl der Elemente in der Liste mehrmals brauchen, speichern wie sie hier zwischen.
@@ -122,7 +121,7 @@ public class Calculator {
      * kein numerischer Wert.
      *
      * @param doubleAsStr
-     * @return
+     * @return Ist String ein Double?
      */
     public static boolean isDouble(String doubleAsStr) {
         try {

@@ -3,7 +3,7 @@ package de.dhbw.calculator;
 public class Main {
 
     public static void main(String[] args) {
-        Calculator calculator = new Calculator(true);
+        Calculator calculator = new Calculator(false);
 
         for (int i = 0; i < args.length; i++) {
             String arg = args[i];
